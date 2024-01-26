@@ -1,0 +1,27 @@
+import java.util.Scanner;
+/*
+ * Given age in years, calculate and display approximate age in days
+ * 
+ * Kevin Hoang 06/15/21
+ */
+ 
+ public class AgeInDays {
+	 
+	public static void main(String[] args) {
+		
+		
+		/* New scanner object based on System.in, which happens to be
+		 * your keyboard.
+		 */
+		System.out.print("Enter your age in years: ");
+		Scanner input = new Scanner(System.in);
+		int years = input.nextInt();
+		int days = 365 * years;
+		
+		System.out.print("Age in days is about " + days + ".");
+		
+		input.close(); // Telling Java we dont need keyboard anymore.
+		
+	}
+ }
+ 
