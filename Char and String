@@ -1,0 +1,104 @@
+There are two types of datatypes in Java:
+
+primitive values - they store directly in memory as themselves:
+
+int, long, double, float, char, boolean
+
+int n = 22; n   22
+
+object or reference values --- they are stored in a separate of memory
+and the variable "points" to where they are stored.
+
+String s = "mobile"; s 156773      156773: m o b i l e
+^--- begins with captial letter ===> scanner is reference type
+
+=====================================================
+String word = "artichokes";
+
+word.length();
+10
+
+word.charAt(0); // we index strings with zero as first character
+a
+
+word.charAt(9);
+s
+
+word.charAt(10);
+Error occurs because outside bounds.
+
+can't use negative numbers as well.
+
+word.toUpperCase();
+'ARTICHOKES'
+(does not change the original String)
+
+String shout = "HOWDY";
+shout.toLowerCase();
+howdy
+
+=======================================================
+String withSpacing = " \t \t \n abc \t \t \n \t
+
+String compact = withSpacing.trim();
+System.out.print(withSpacing.trim());
+abc
+=======================================================
+when reading string input from user use input.nextLine();
+ex: String name = input.nextLine();
+=======================================================
+String word1 = 'cat';
+String word2 = 'dog';
+
+can't use == to compare because thats they're reference
+use .equals();
+
+word1.equals(dog);
+false
+
+=======================================================
+
+stringobject.compareTo(argument) returns: 
+
+	a negative number: if stringobject is before argument alphabetically
+	zero: if string object is same as argument
+	a positive number: if stringobject is after argument alphabetically
+	
+	"zebra".compareTo("dog") --> returns a positive number
+=======================================================
+String str = "artichoke";
+a r t i c h o k e
+0 1 2 3 4 5 6 7 8
+
+Substring method
+
+String partWord = word.substring(2, 5);
+tic
+
+String toEnd = word.substring(4);
+choke
+
+String toEnd = word.substring(4, word.length());
+chokes
+========================================================
+String word = "artichoke";
+
+word.indexOf(2);
+t
+========================================================
+STRING TO INT AND INT TO STRING
+
+String intStr = "13579";
+intStr ==> "13579"
+
+String doubleStr = "246.8";
+
+Integer.parseInt(intStr);
+13579
+
+Integer.parseInt(intStr) - Double.parseDouble(doubleStr);
+13332.2
+
+
+
+

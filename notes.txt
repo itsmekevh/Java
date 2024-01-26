@@ -1,0 +1,54 @@
+System.out.printf() is the printed formatted method.
+
+
+you give this mehtod a "format string" that tells how you want hte output
+to look, and then the data that needs to be printed.
+
+
+System.out.printf("Your balance is $___.", balance);
+
+The 'fill in the blank' is called a format specifier and it begins with 
+a percent sign 
+
+System.out.printf("Your balancve is $%.2f\n, balance);
+
+%.2f --> float/double, two digits after the decimal
+%.3f --> float/double, three digits after the decimal
+
+printf does NOT automatically give you a new line use "\n".
+
+================================================================
+conditions return a boolean value true or false
+
+=====================================================
+
+System.out.print("door");
+
+
+=========================================
+section 3.6; common error 4 -- the "dangling else" or "ambiguous else"
+only happens if you leave out braces-with-only-one-statement
+
+=============================================================
+What are the conditional operators? ("boolean operators")
+These all ask a yes-or-no, true or false question
+
+<   less than
+<=  less than or equal
+>   greater than
+>=  greater than equal
+==  equal
+!=  not equal
+
+int n = 18; // single = means "becomes" or assigned --- n is assigned 18
+
+this is asking is the value equal to value?
+if (n == 18) {
+	System.out.println("hurray u can vote");
+}else{
+	System.out.println("nothing special about you, sorry.")
+}
+=================================
+if (percent >= 0 && percent < 50) // compound condition
+
+

@@ -1,0 +1,41 @@
+Part 1 phone word
+input ---> result
+CARS-1-AA ---> on phone would be = 2277122
+GREAT DEALS ---> 4732833257 ---> 4732833
+
+the input length doesn't matter, the output length does matter
+
+C-A-T-S! ---> 2287 ---> too short for a phone word. (result < 7 digits long)
+
+result = ""; // start with empty string
+Read in phone word
+convert it to uppercase (for all lower case) for our convenience
+for each character in the phone word {
+	if its a digit add it to the result
+	otherwise if it is a letter{
+		figure out which numeral the letter corresponds to
+		add that numeral to the end of the result
+		} otherwise {
+				do nothing at all --- ignore it  (not a letter or digit)
+		}
+	}
+}
+
+if the length of result >= 7 {
+	print the first 7 digits
+} else {
+	its an error
+	}
+	
+	
+	
+Part 2: 
+
+10, 3, 7
+
+double sum 0
+double sumsq 0
+
+10 ---> sum becomes 10, sumsq = 100
+3 ---> sum becomes 13, sumsq = 100 + 9 = 109
+7 ---> sum becomes 20, sumsq = 109 + ( 7 * 7 ) = 158

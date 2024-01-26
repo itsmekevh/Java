@@ -1,0 +1,27 @@
+Data types in Java
+
+int --- integer (-2billion -- +2billion) 32 bit
+short --- whole numbers (-65000 -- +65000)
+long -- whole nuymbers go from -2^63 to +2^63
+
+float -- floating point -- 7 decimal points of precision
+double -- double precision -- 15 decimal digits of precision
+
+
+===========================
+int n =22;    n  23
+n = n + 1; // increment n (add one to it)
+n++; // same as n = n + 1;
+++n; // same as n = n + 1;
+
+profit = profit * 1.10; // increase profit by 10%
+profit *= 1.10;
+
+
+temperature -=5; // temperature = temperature - 5
+halfPrice /= 2.0; // halfPrice = halfPrice / 2.0
+
+
+34 / 5.0 --> decimal result
+
+

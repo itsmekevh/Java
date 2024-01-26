@@ -1,0 +1,22 @@
+%f --> float or double (you can use .n as in %.2f)
+%c --> character
+%s --> String
+%d --> int, long
+=========================
+
+FOR LOOP:
+
+int counter = 0;
+while (counter < 10) {
+	System.out.println(counter);
+	counter++;
+}
+
+for (int counter = 0; counter < 10; counter++){
+	System.out.println(counter);
+}
+
+for (initialize; condition; update;){
+	body;
+}
+

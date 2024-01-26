@@ -1,0 +1,36 @@
+Logical operators
+
+&& --> and (both must be true)
+|| --> or (Either one or both must be true)
+^ ---> "XOR" either one but not both
+
+
+======================================
+3 main programming constructs:
+
+sequence (one after another)
+selection (do something given condition)
+repitition (do some task repeatedly)
+
+==========================================
+Math.randon() ---> [0,1)
+(int) (Math.random() * n) --> [0,n]
+
+(int (Math.random() * (n - m)) + m --> [m,n]
+for exmaple: a random number from 18 to 21 -- including 21
+(int) (Math.random() * (22 - 18)) + 18
+Math.random() * 4 --> [0, 3.9999 .... 
+the integer part of that is just 3, which gives me [0, 1, 2, 3] + 18 -> 18 19 20 21
+
+=====================================================
+if (age < 16) {
+	price = 4.95;
+} else {
+	price = 7.95;
+}
+
+conditional operator (ch 3.14)
+price = (age < 16) ? 4.95 : 7.95;
+
+System.out.printf(cost is $.2f, cost)
+

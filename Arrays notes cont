@@ -1,0 +1,46 @@
+
+---Add a comma to every number except the last number in an array---
+public static void display (int [] arr) {
+	System.out.print("{");
+	for (int index = 0; index < arr.length; index++ {
+		System.out.print(arr[index]);
+		if (index < arr.length - 1) {
+			System.out.print(", ");
+		}
+	}
+	System.out.print("}");
+}
+
+--- display whatever is in array ---
+int [] single = {998};
+display (single)
+
+OUTPUT:
+998
+
+--- Call by value ---
+
+Show that arguments are COPIED into the parameter, and changing a paremeter
+NEVER changes the original argument.
+
+
+
+public static void main(String[] args){
+	int n = 12;
+	cube (n);
+	System.out.printf("n is now %d\n", n);
+
+}
+
+
+===============================================================
+If you are given a choice of how to pass and manipulate arrays, 
+prefer to return a new array and leave the original untouched
+
+sometimes you dont have a choice, question on quiz or assignment that says
+"you must update the original array" 
+
+Reason: cleaner, avoids unexpected results --- if you call an "inplace" method
+twice, your array gets changed twice. Also, it mimics the behavior you have
+come to expect with primitive arguments and parameters which never change
+because they are call-by-value.

@@ -1,0 +1,49 @@
+double [] temperatures = new double [7];
+
+[] = array.
+
+the first element of the array is always at index [0]
+
+temperatures[0] = 27.2;
+
+the last index is always the number of items - 1 
+
+temperature sub 0 = temperature[0] 
+
+- example where it is clunky, better version shown later -
+double sum = 0.0;
+int index = 0;
+sum = sum + temperature[index];
+index++;
+
+sum = sum + temperature[index];
+index++;
+
+you can assign things in curly braces 
+
+double [] temperatures = {27.2, 22.3, ..... }
+
+temperature.length can use this variable for the size of the array
+
+ex. for (int index = 0; index < temperature.length; index++){
+		sum = sum + temperatures[index];
+		}
+		
+	99% of the time you will use a for loop to iterate through an array
+		
+
+dot notation read right to left
+
+temperature.length = length of the array temperature.
+remember the total elements are the number of elements - 1
+
+FOREACH LOOP
+
+can be used to be a bit more compact
+
+read this as for each item in the temperatures list
+for (double item: temperatures) {
+	sum = sum + item
+}
+	
+
